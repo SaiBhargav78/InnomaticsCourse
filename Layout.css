@@ -1,0 +1,72 @@
+header,section,nav,aside,main,footer{
+    margin: 2px;
+    border: 2px solid blueviolet;
+    padding: 5px;
+    box-shadow: 2px 2px 5px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 2px;
+    
+}
+
+a{
+    color: black;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+}
+
+aside{
+    width: 25%;
+    background-color: rgb(212, 77, 77);
+}
+main{
+    display: grid;
+    width: 75%;
+    background-color: rgb(78, 203, 207);
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 5px;
+}
+
+table,th,td{
+    border: 1px solid rgb(102, 23, 102);
+}
+
+table{
+    width: 100%;
+}
+
+th,td{
+    text-align: center;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+    
+}
+
+.grid-item{
+    margin: auto;
+    border: 1px solid rgb(54, 21, 48);
+    box-shadow: 1px 1px 3px;
+    background-color: bisque;
+}
+
+nav{
+    position: sticky;
+    background-color: rgb(75, 75, 222);
+}
