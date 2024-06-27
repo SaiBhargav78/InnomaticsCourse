@@ -1,3 +1,7 @@
+body{
+    height: 400vh;
+}
+
 header,section,nav,aside,main,footer{
     margin: 2px;
     border: 2px solid blueviolet;
@@ -67,6 +71,19 @@ th,td{
 }
 
 nav{
-    position: sticky;
+    
     background-color: rgb(75, 75, 222);
+}
+
+header{
+    position: sticky;
+    top: 10px;
+    background-color: bisque;
+}
+
+footer{
+    position: fixed;
+    margin: auto;
+    width: 97.4%;
+    bottom: 5px;
 }
