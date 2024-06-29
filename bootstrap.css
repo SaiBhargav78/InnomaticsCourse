@@ -1,0 +1,19 @@
+.flexcontain{
+    display: flex;
+}
+
+aside{
+    flex-basis: 25%;
+}
+
+main{
+    flex-basis: 75%;
+}
+
+.form{
+    padding: 10px;
+}
+
+.maincontain{
+    flex-direction: column;
+}
