@@ -1,0 +1,54 @@
+html,body{
+    height: 100%;
+}
+
+
+.container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 2px solid black;
+    align-items: center;
+}
+
+.loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    border-top: 5px solid black;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.slidercontain{
+    max-width: 880px;
+    height: 500px;
+    margin: auto;
+}
+
+.itemcontain{
+    height: 100%;
+}
+
+.items{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

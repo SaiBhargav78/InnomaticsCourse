@@ -1,0 +1,87 @@
+body,html{
+    height: 100%;
+}
+
+.toastcontainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.toast{
+    visibility: hidden;
+    opacity: 0;
+    background-color: aquamarine;
+    width: 450px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: visibility 0s linear 0.5s opacity 0.5s linear;
+}
+
+.toast1{
+    visibility: hidden;
+    opacity: 0;
+    background-color: aquamarine;
+    width: 450px;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    transition: visibility 0s linear 0.5s opacity 0.5s linear;
+}
+
+input[class="check"]:checked ~ .toast{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.5s 0.5s;
+    animation: FadeIn 2s forwards;
+}
+
+input[class="check"]:checked ~ .toast1{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.5s 0.5s;
+    animation: FadeIn 2s forwards;
+}
+
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+        visibility: visible;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+input[class="check"]:not(:checked) ~ .toast{
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 0.5s 0.5s;
+    animation: FadeOut 2s backwards;
+}
+
+input[class="check"]:not(:checked) ~ .toast1{
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 0.5s 0.5s;
+    animation: FadeOut 2s backwards;
+}
+
+@keyframes FadeOut{
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
