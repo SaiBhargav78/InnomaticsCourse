@@ -24,7 +24,7 @@
 //     }
 //     else{
 //         flag=1;
-//     }
+//     }}
 
 
 // check if number is between 5 and 9.
