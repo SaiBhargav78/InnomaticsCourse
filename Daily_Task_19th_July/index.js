@@ -104,3 +104,15 @@ console.log(person); //Output: {name: 'Bhargav',age: 22,address: { street: 'RJD 
 // address object within the person object created in the previous task.
 
 console.log(person.address.city); //Output: Hyderabad
+
+// Using Arrow Functions
+//  1. Basic Arrow Function
+//  ○ Write an arrow function named greet that takes a name as an argument
+//  and returns the string "Hello, [name]!".
+//  ○ Print the result of calling greet with your name.
+
+let greet = (name) => {
+    return `Hello ${name}`;
+}
+
+console.log(greet("bhargav")); //Output: Hello bhargav
