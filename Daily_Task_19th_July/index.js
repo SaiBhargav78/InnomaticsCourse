@@ -111,7 +111,7 @@ console.log(person.address.city); //Output: Hyderabad
 //  and returns the string "Hello, [name]!".
 //  ○ Print the result of calling greet with your name.
 
-let greet = (name) => {
+const greet = (name) => {
     return `Hello ${name}`;
 }
 
