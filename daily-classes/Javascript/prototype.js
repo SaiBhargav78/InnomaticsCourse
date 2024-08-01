@@ -29,6 +29,9 @@ let personObj = {
     }
 }
 
+console.log(personObj)
+personObj.greet.call({name:"bhargav"})
+
 let personone = Object.create(personObj)
 console.log(personone)
 

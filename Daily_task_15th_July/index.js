@@ -1,5 +1,7 @@
 // If-Else Conditional Statements
 function checksign(){
+    let numbtn = document.getElementById("numbtn")
+    numbtn.style.backgroundColor = "red"
     let num = Number(document.getElementById("num").value);
     if(num>0){
         document.getElementById("result1").innerHTML = "Positive";
@@ -10,6 +12,8 @@ function checksign(){
     else{
         document.getElementById("result1").innerHTML = "Negative";
     }
+    let variable = [];
+    console.log(typeof variable)
 }
 
 // Switch-Case Statements
