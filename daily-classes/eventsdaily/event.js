@@ -11,6 +11,7 @@ myself.style.border = "2px solid blue"
 myself.style.backgroundColor = 'cyan'
 myself.style.textAlign = 'center'
 document.getElementById("asus").style.color = "turqoise"
+console.dir(btn)
 
 btn.addEventListener("click",()=>{
     if(color === "white"){
@@ -19,6 +20,9 @@ btn.addEventListener("click",()=>{
             btn.style.fontSize = "18px"
             for(let i = 0;i<item.length;i++){
                 item[i].style.fontSize = "18px"
+                if(i===2){
+                    item[i].style.color = "white"
+                }
             }
             for(let j = 0;j<queryall.length;j++){
                 queryall[j].style.color = "blue"
@@ -31,6 +35,9 @@ btn.addEventListener("click",()=>{
                 item[i].style.fontSize = "25px"
                 item[i].style.border = "solid 1px white"
                 item[i].style.color = "white"
+                if(i===2){
+                    item[i].style.color = "blue"
+                }
             }
             query.style.fontstyle = "italic"
             query.style.color = "white"
@@ -44,6 +51,9 @@ btn.addEventListener("click",()=>{
                 item[i].style.fontSize = "25px"
                 item[i].style.border = "solid 1px black"
                 item[i].style.color = "black"
+                if(i===2){
+                    item[i].style.color = "blue"
+                }
             }
             query.style.fontstyle = "times new roman"
             query.style.color = "black"
@@ -53,6 +63,9 @@ btn.addEventListener("click",()=>{
             btn.style.fontSize = "18px"
             for(let i = 0;i<item.length;i++){
                 item[i].style.fontSize = "18px"
+                if(i===2){
+                    item[i].style.color = "black"
+                }
             }
             for(let j = 0;j<queryall.length;j++){
                 queryall[j].style.color = "black"
