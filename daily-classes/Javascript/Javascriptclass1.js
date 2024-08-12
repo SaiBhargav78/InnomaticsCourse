@@ -118,3 +118,18 @@ console.log();
 // Or Operator
 console.log("Age || height:",age||height);
 console.log();
+
+async function nam(params) {
+    params = params*10
+    let res = await params
+    return res
+}
+
+let b = nam(30)
+
+console.log(b)
+
+for(let i = 0;i<4;i++){
+    console.log(i)
+    return
+}
